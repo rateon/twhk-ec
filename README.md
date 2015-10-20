@@ -18,3 +18,20 @@ data/Smarty/templates/default/frontparts/form_personal_confirm.tpl
 
 *HEAD設定*  
 data/Smarty/templates/default/site_frame.tpl
+
+*郵便番号DB登録*
+Zip アーカイブDL
+http://svn.ec-cube.net/open_trac/changeset/21892
+ファイルを配置
+data/class/pages/admin/basis/LC_Page_Admin_Basis_ZipInstall.php
+
+手動登録
+
+*会員フォーム必須項目削除*
+
+/data/Smarty/templates/default/frontparts/form_personal_input.tpl
+/data/class/helper/SC_Helper_Customer.php
+
+*エラーメッセージ*
+data/class/SC_CheckError.php
+
