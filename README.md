@@ -37,7 +37,8 @@ data/class/SC_CheckError.php
 
 *ログイン 分岐処理*  
 /data/class/pages/LC_Page.php  
-    // ログイン処理　情報取得  
+  
+    // ログイン処理　情報取得　関数initに追加  
     $objCustomer = new SC_Customer();  
     if ( $objCustomer->isLoginSuccess() ) {  
         $this->tpl_login = true;  
@@ -45,6 +46,7 @@ data/class/SC_CheckError.php
         $this->tpl_name1 = $objCustomer->getValue( 'name01' );  
         $this->tpl_name2 = $objCustomer->getValue( 'name02' );  
     }  
+  
 <&#33;--{if $tpl_login}-->  
 ログインしている時の処理  
 <&#33;--{else}-->  
